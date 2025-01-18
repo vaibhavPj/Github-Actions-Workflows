@@ -1,0 +1,17 @@
+name: github project
+
+on:
+  workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Run job
+    steps:
+      - name: install NodeJs
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      
+        
+  
